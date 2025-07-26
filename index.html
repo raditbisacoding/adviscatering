@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advis Catering - Solusi Catering Profesional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero {
+            background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(0, 0, 0, 0.7)), url('foto2.jpg') no-repeat center center/cover;
+            height: 90vh;
+
+            
+            
+        }
+        .menu-card:hover {    
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        } 
+        .animated-item {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
+        }
+        .animated-item.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <span class="text-2xl font-bold text-indigo-600">ADVIS CATERING</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-800 hover:text-indigo-600 px-3 py-2 font-medium">Beranda</a>
+                    <a href="#services" class="text-gray-800 hover:text-indigo-600 px-3 py-2 font-medium">Layanan</a>
+                    <a href="#about" class="text-gray-800 hover:text-indigo-600 px-3 py-2 font-medium">Tentang Kami</a>
+                    <a href="#testimonials" class="text-gray-800 hover:text-indigo-600 px-3 py-2 font-medium">Testimoni</a>
+                    <a href="#contact" class="bg-indigo-600 text-white px-6 py-2 rounded-md hover:bg-indigo-700 transition font-medium">Kontak</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-800">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute w-full z-50">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 text-gray-800 hover:text-indigo-600">Beranda</a>
+                <a href="#services" class="block px-3 py-2 text-gray-800 hover:text-indigo-600">Layanan</a>
+                <a href="#about" class="block px-3 py-2 text-gray-800 hover:text-indigo-600">Tentang Kami</a>
+                <a href="#testimonials" class="block px-3 py-2 text-gray-800 hover:text-indigo-600">Testimoni</a>
+                <a href="#contact" class="block px-3 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero flex items-center justify-center text-center text-white">
+        <div class="container mx-auto px-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 animated-item">SOLUSI CATERING PROFESIONAL</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto animated-item">Kami memberikan konsultasi dan layanan catering terbaik untuk acara Anda, dari pernikahan hingga acara korporat.</p>
+            <div class="animated-item">
+                <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full inline-block transition duration-300 transform hover:scale-105">Konsultasi Sekarang</a>
+                <a href="#services" class="ml-4 border-2 border-white hover:bg-white hover:text-gray-900 text-white font-bold py-3 px-8 rounded-full inline-block transition duration-300 transform hover:scale-105">Layanan Kami</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 animated-item">
+                <h2 class="text-4xl font-bold mb-4 text-gray-800">LAYANAN KAMI</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Kami menawarkan berbagai layanan catering berkualitas tinggi untuk memenuhi kebutuhan acara Anda.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg menu-card transition duration-300 animated-item">
+                    <div class="text-indigo-600 mb-4"><i class="fas fa-glass-cheers text-4xl"></i></div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Catering Wedding</h3>
+                    <p class="text-gray-600 mb-6">Kami menyediakan menu lengkap untuk pernikahan Anda dengan berbagai pilihan paket premium yang dapat disesuaikan.</p>
+                    <div class="h-48 bg-gray-100 rounded-lg overflow-hidden mb-4">
+                        <img src="foto3.jpg" alt="Elegant wedding banquet setting with flower decorations, fine china, and beautifully presented dishes" class="w-full h-full object-cover" />
+                    </div>
+                    <a href="#" class="text-indigo-600 font-semibold hover:text-indigo-800 transition">Selengkapnya →</a>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg menu-card transition duration-300 animated-item" style="transition-delay: 0.2s;">
+                    <div class="text-indigo-600 mb-4"><i class="fas fa-briefcase text-4xl"></i></div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Catering Korporat</h3>
+                    <p class="text-gray-600 mb-6">Layanan catering profesional untuk meeting, seminar, dan acara perusahaan lainnya dengan menu yang variatif.</p>
+                    <div class="h-48 bg-gray-100 rounded-lg overflow-hidden mb-4">
+                        <img src="foto4.jpg" alt="Modern corporate event setup with buffet-style catering in a glass office conference room" class="w-full h-full object-cover" />
+                    </div>
+                    <a href="#" class="text-indigo-600 font-semibold hover:text-indigo-800 transition">Selengkapnya →</a>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg menu-card transition duration-300 animated-item" style="transition-delay: 0.4s;">
+                    <div class="text-indigo-600 mb-4"><i class="fas fa-home text-4xl"></i></div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Catering Rumahan</h3>
+                    <p class="text-gray-600 mb-6">Menu sehat dan bergizi untuk kebutuhan harian keluarga Anda, dikemas praktis dan menarik.</p>
+                    <div class="h-48 bg-gray-100 rounded-lg overflow-hidden mb-4">
+                        <img src="foto5.jpg" alt="Homely kitchen setting with freshly prepared meals arranged beautifully on a wooden dining table" class="w-full h-full object-cover" />
+                    </div>
+                    <a href="#" class="text-indigo-600 font-semibold hover:text-indigo-800 transition">Selengkapnya →</a>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12 animated-item">
+                <a href="#" class="inline-block bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold py-3 px-8 rounded-full hover:shadow-lg transition transform hover:scale-105">Lihat Semua Layanan</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-12 animated-item">
+                    <img src="foto6.jpg" alt="Professional catering team in kitchen preparing food with fresh ingredients, wearing clean uniforms and hairnets" class="rounded-xl shadow-xl w-full" />
+                </div>
+                <div class="lg:w-1/2 animated-item" style="transition-delay: 0.2s;">
+                    <h2 class="text-4xl font-bold mb-6 text-gray-800">TENTANG KAMI</h2>
+                    <p class="text-xl text-gray-600 mb-6">Advis Catering telah berpengalaman lebih dari 20 tahun dalam menyediakan konsultasi dan layanan catering berkualitas tinggi untuk berbagai jenis acara.</p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex">
+                            <div class="bg-indigo-100 text-indigo-600 rounded-full h-10 w-10 flex items-center justify-center mr-4">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Tim Profesional</h4>
+                                <p class="text-gray-600">Chef dan tim yang berpengalaman profesional di bidangnya.</p>
+                            </div>
+                        </li>
+                        <li class="flex">
+                            <div class="bg-indigo-100 text-indigo-600 rounded-full h-10 w-10 flex items-center justify-center mr-4">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Bahan Berkualitas</h4>
+                                <p class="text-gray-600">Hanya menggunakan bahan-bahan segar dan berkualitas tinggi.</p>
+                            </div>
+                        </li>
+                        <li class="flex">
+                            <div class="bg-indigo-100 text-indigo-600 rounded-full h-10 w-10 flex items-center justify-center mr-4">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Presentasi Mewah</h4>
+                                <p class="text-gray-600">Presentasi hidangan yang elegan dan menarik.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="inline-block bg-indigo-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-indigo-700 transition">Pelajari Lebih Lanjut</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-indigo-700 text-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div class="p-6 bg-indigo-800 rounded-lg animated-item">
+                    <div class="text-5xl font-bold mb-2">500+</div>
+                    <div class="text-lg">Acara Sukses</div>
+                </div>
+                <div class="p-6 bg-indigo-800 rounded-lg animated-item" style="transition-delay: 0.2s;">
+                    <div class="text-5xl font-bold mb-2">100+</div>
+                    <div class="text-lg">Pelanggan Tetap</div>
+                </div>
+                <div class="p-6 bg-indigo-800 rounded-lg animated-item" style="transition-delay: 0.4s;">
+                    <div class="text-5xl font-bold mb-2">50+</div>
+                    <div class="text-lg">Menu Variasi</div>
+                </div>
+                <div class="p-6 bg-indigo-800 rounded-lg animated-item" style="transition-delay: 0.6s;">
+                    <div class="text-5xl font-bold mb-2">20+</div>
+                    <div class="text-lg">Tahun Pengalaman</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 animated-item">
+                <h2 class="text-4xl font-bold mb-4 text-gray-800">TESTIMONI PELANGGAN</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Apa kata mereka tentang layanan kami</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg animated-item">
+                    <div class="text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"Layanan catering untuk pernikahan kami sangat memuaskan. Makanannya lezat dan presentasinya sangat elegan. Semua tamu terkesan!"</p>
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/80x80" alt="Portrait of a smiling young bride in traditional wedding attire giving testimonial" class="w-12 h-12 rounded-full object-cover mr-4" />
+                        <div>
+                            <h4 class="font-bold text-gray-800">Suci</h4>
+                            <p class="text-gray-500">Wedding</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg animated-item" style="transition-delay: 0.2s;">
+                    <div class="text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"Untuk acara perusahaan kami yang rutin, kami selalu menggunakan Advis Catering. Profesional dan konsisten kualitasnya."</p>
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/80x80" alt="Portrait of a middle-aged corporate executive in formal business attire" class="w-12 h-12 rounded-full object-cover mr-4" />
+                        <div>
+                            <h4 class="font-bold text-gray-800">Liza</h4>
+                            <p class="text-gray-500">Wedding</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg animated-item" style="transition-delay: 0.4s;">
+                    <div class="text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"Sudah 2 tahun berlangganan catering harian untuk keluarga. Menu variatif dan masakannya selalu terasa fresh."</p>
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/80x80" alt="Portrait of a happy housewife in casual home attire holding a prepared meal" class="w-12 h-12 rounded-full object-cover mr-4" />
+                        <div>
+                            <h4 class="font-bold text-gray-800">Rini</h4>
+                            <p class="text-gray-500">Catering Harian</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 animated-item">
+                <h2 class="text-4xl font-bold mb-4 text-gray-800">HUBUNGI KAMI</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Silakan tinggalkan pesan Anda dan kami akan segera menghubungi Anda</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-8 md:p-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="animated-item">
+                        <h3 class="text-2xl font-bold mb-6 text-gray-800">Informasi Kontak</h3>
+                        
+                        <div class="flex items-start mb-6">
+                            <div class="text-indigo-600 mt-1 mr-4"><i class="fas fa-map-marker-alt text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Alamat</h4>
+                                <p class="text-gray-600">Dr. Soetomo I Block A No.9 Marapalam Padang</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start mb-6">
+                            <div class="text-indigo-600 mt-1 mr-4"><i class="fas fa-phone-alt text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Telepon / Whatsapp</h4>
+                                <p class="text-gray-600">+62 81371008710</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start mb-6">
+                            <div class="text-indigo-600 mt-1 mr-4"><i class="fas fa-envelope text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Email</h4>
+                                <p class="text-gray-600">radityaidris1709@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-indigo-600 mt-1 mr-4"><i class="fas fa-clock text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Jam Operasional</h4>
+                                <p class="text-gray-600">Senin - Minggu: 07:00 Pagi - 07:00 Malam  </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="animated-item" style="transition-delay: 0.2s;">
+                        <form class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Nama Lengkap</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-transparent" placeholder="Masukkan nama Anda">
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-transparent" placeholder="Masukkan email Anda">
+                            </div>
+                            
+                            <div>
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Telepon</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-transparent" placeholder="Masukkan nomor telepon">
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Pesan</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-transparent" placeholder="Ceritakan kebutuhan catering Anda"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition">Kirim Pesan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center text-gray-800 animated-item">GALERI KARYA KAMI</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="overflow-hidden rounded-lg animated-item">
+                    <img src="https://placehold.co/800x600" alt="Elegant wedding buffet spread with chef preparing dishes in the background" class="w-full h-full object-cover transition duration-500 hover:scale-110" />
+                </div>
+                <div class="overflow-hidden rounded-lg animated-item" style="transition-delay: 0.1s;">
+                    <img src="https://placehold.co/800x600" alt="Corporate lunch setup with neatly arranged buffet stations and attendees serving themselves" class="w-full h-full object-cover transition duration-500 hover:scale-110" />
+                </div>
+                <div class="overflow-hidden rounded-lg animated-item" style="transition-delay: 0.2s;">
+                    <img src="https://placehold.co/800x600" alt="Team of chefs plating dishes in a professional kitchen with fresh ingredients visible" class="w-full h-full object-cover transition duration-500 hover:scale-110" />
+                </div>
+                <div class="overflow-hidden rounded-lg animated-item" style="transition-delay: 0.3s;">
+                    <img src="https://placehold.co/800x600" alt="Food tasting session with elegant table setting and clients evaluating dishes" class="w-full h-full object-cover transition duration-500 hover:scale-110" />
+                </div>
+                <div class="overflow-hidden rounded-lg animated-item" style="transition-delay: 0.4s;">
+                    <img src="https://placehold.co/800x600" alt="Artistically presented dessert table with cakes, pastries and decorations" class="w-full h-full object-cover transition duration-500 hover:scale-110" />
+                </div>
+                <div class="overflow-hidden rounded-lg animated-item" style="transition-delay: 0.5s;">
+                    <img src="https://placehold.co/800x600" alt="Wedding cake being prepared by pastry chef with flowers and decorations" class="w-full h-full object-cover transition duration-500 hover:scale-110" />
+                </div>
+                <div class="overflow-hidden rounded-lg animated-item" style="transition-delay: 0.6s;">
+                    <img src="https://placehold.co/800x600" alt="Theme banquet setup with decorative elements matching the event concept" class="w-full h-full object-cover transition duration-500 hover:scale-110" />
+                </div>
+                <div class="overflow-hidden rounded-lg animated-item" style="transition-delay: 0.7s;">
+                    <img src="https://placehold.co/800x600" alt="Happy clients celebrating with catering team at a successful event" class="w-full h-full object-cover transition duration-500 hover:scale-110" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 flex items-center">
+                        <span class="text-indigo-400">ADVIS</span><span class="text-white">CATERING</span>
+                    </h3>
+                    <p class="text-gray-400 mb-6">Konsultan dan penyedia layanan catering profesional untuk berbagai acara dan kebutuhan Anda.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/pipiet.naraqueen" target="_blank" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="https://www.instagram.com/pipiet_bunda_naraqueen/" target="_blank" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in text-xl"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">LAYANAN</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Catering Pernikahan</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Catering Korporat</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Catering Harian</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Konsultasi Menu</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Vendor Lengkap</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">TAUTAN CEPAT</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Beranda</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">Layanan</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">Tentang Kami</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition">Testimoni</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">NEWSLETTER</h4>
+                    <p class="text-gray-400 mb-4">Dapatkan informasi dan promo terbaru dari kami</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Email Anda" class="px-4 py-3 w-full rounded-l-lg focus:outline-none text-gray-900">
+                        <button class="bg-indigo-600 hover:bg-indigo-700 px-4 rounded-r-lg"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-6 text-center text-gray-500 text-sm">
+                <p>&copy; 2025 Advis Catering. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-indigo-600 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg hover:bg-indigo-700 transition hidden">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Animation on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const animatedItems = document.querySelectorAll('.animated-item');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            animatedItems.forEach(item => observer.observe(item));
+            
+            // Mobile menu toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    mobileMenu.classList.add('hidden');
+                    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            
+            // Back to top button
+            const backToTopButton = document.getElementById('backToTop');
+            
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.classList.remove('hidden');
+                } else {
+                    backToTopButton.classList.add('hidden');
+                }
+            });
+            
+            backToTopButton.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Form submission
+            const contactForm = document.querySelector('#contact form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Terima kasih pesan Anda telah terkirim. Kami akan segera menghubungi Anda.');
+                    this.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
